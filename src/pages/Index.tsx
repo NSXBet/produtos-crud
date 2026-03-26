@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Plus, Package } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "@/components/ThemeToggle";
 import { useProducts } from "@/hooks/use-products";
 import ProductTable from "@/components/products/ProductTable";
 import ProductFormDialog from "@/components/products/ProductFormDialog";
@@ -67,10 +68,13 @@ const Index = () => {
             </div>
           </div>
 
-          <Button onClick={handleCreate}>
-            <Plus className="mr-2 h-4 w-4" />
-            Novo Produto
-          </Button>
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <Button onClick={handleCreate}>
+              <Plus className="mr-2 h-4 w-4" />
+              Novo Produto
+            </Button>
+          </div>
         </div>
 
         <ProductTable
