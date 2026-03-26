@@ -56,4 +56,4 @@ This project is built with:
 
 ## How can I deploy this project?
 
-You can deploy this project to any static hosting service like Vercel, Netlify, or GitHub Pages.
+You can deploy this project to any static hosting service like Vercel, Netlify, or GitHub Pages. 1
